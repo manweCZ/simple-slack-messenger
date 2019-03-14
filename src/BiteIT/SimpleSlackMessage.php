@@ -41,8 +41,13 @@ class SimpleSlackMessage{
         return $this;
     }
 
+    /**
+     * @param $text
+     * @return $this
+     */
     public function setText($text){
         $this->payload['text'] = $text;
+        return $this;
     }
 
     public function getPayload(){
