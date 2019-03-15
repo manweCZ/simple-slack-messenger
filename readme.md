@@ -5,7 +5,12 @@ Send simple messages to Slack through Webhook API
 2. $$$
 
 ```php
-$messenger = new \BiteIT\SimpleSlackMessenger('YOUR_HOOK_URL');
+$messenger = new \BiteIT\SimpleSlackMessenger('YOUR_WEBHOOK_URL');
+$msg = new \BiteIT\SimpleSlackMessage();
+$msg->setText('Hello')
+    ->setName('MyBotName')
+    ->setIconEmoji('hankey');
 
+$messenger->sendSimpleMessage($msg);
 ```
 
