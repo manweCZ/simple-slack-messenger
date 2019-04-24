@@ -2,7 +2,7 @@
   "name": "biteit/simple-slack-messenger",
   "description": "Send simple messages to your Slack",
   "minimum-stability": "dev",
-  "version": 0.5,
+  "version": "0.1",
   "license": "MIT",
   "authors": [
     {
